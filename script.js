@@ -5,15 +5,19 @@ let emojiGallery = document.getElementById('gallery-container')
 function showEmojis(count = emojiCodes.length) {
     emojiGallery.innerHTML = ''
     for (let i = 0; i < count; i++) {
-        const code = emojiCodes[i]
+        const codes = emojiCodes[i]
 
-        const emoji = String.fromCodePoint(code)
+        const emoji = String.fromCodePoint(codes)
 
         const card = document.createElement('div')
 
-        card.textContent = `${emoji} ${code}`
+        card.classList.add('emoji-cards')
+
+        card.textContent = `${emoji} ${codes}`
         
         emojiGallery.appendChild(card);
+
+        
     }
 }
 showEmojis()

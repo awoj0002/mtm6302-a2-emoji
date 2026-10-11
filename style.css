@@ -1,0 +1,16 @@
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.emoji-cards {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px;
+}
