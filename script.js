@@ -13,7 +13,7 @@ function showEmojis(count = emojiCodes.length) {
 
         card.classList.add('emoji-cards')
 
-        card.textContent = `${emoji} ${codes}`
+        card.textContent = (`${emoji} ${codes}`)
         
         emojiGallery.appendChild(card);
 
